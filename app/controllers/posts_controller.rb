@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :require_login
+
   def index
   end
 
@@ -19,4 +21,11 @@ class PostsController < ApplicationController
 
   def destroy
   end
+
+  def require_login
+    unless current_user
+      redirect_to login_path
+    end
+  end
+
 end

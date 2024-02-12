@@ -1,5 +1,12 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-const environment = require('./environment')
+let environment = require('./environment')
+
+environment.loaders.append('vue', {
+  test: /\.vue$/,
+  use: {
+    loader: 'vue-loader'
+  }
+});
 
 module.exports = environment.toWebpackConfig()

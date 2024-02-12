@@ -1,0 +1,13 @@
+= form_for :session, url: login_path do |f|
+  .form-group
+    = f.label :email, class: 'fw-bold'
+    br
+    = f.text_field :email, class: 'form-control'
+  .form-group
+    = f.label :password, class: 'fw-bold'
+    br
+    = f.password_field :password, class: 'form-control'
+  .form-group.text-left.mt-4
+    = f.submit 'Log in', class: 'btn btn-primary w-100'
+.d-flex.justify-content-end.mt-2
+  = link_to "Create New Account", registration_path, class: "btn btn-secondary w-100"
