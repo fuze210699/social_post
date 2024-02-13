@@ -1,10 +1,16 @@
 import { createApp } from 'vue';
-import PostScreen from '../vue/feature/posts/index.vue';
+import NewPost from '../vue/feature/posts/New.vue';
+import EditPost from '../vue/feature/posts/Edit.vue';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const $el1 = document.querySelector('.vue-posts');
+  const $el1 = document.querySelector('.vue-new-post');
   createApp({
-    components: { PostScreen },
-    template: '<posts/>'
+    components: { NewPost },
+    template: '<NewPost/>'
   }).mount($el1);
+  const $el2 = document.querySelector('.vue-edit-post');
+  createApp({
+    components: { EditPost },
+    template: '<EditPost/>'
+  }).mount($el2);
 });

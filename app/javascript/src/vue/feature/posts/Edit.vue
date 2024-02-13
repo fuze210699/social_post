@@ -1,11 +1,13 @@
-<template>
+<template lang="">
   <div>
-    Dashboard
+    Edit
   </div>
 </template>
-
 <script>
 export default {
-  name: "DashboardScreen"
+  
 }
 </script>
+<style lang="">
+  
+</style>

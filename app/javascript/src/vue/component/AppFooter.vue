@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-5">
-    Post
+  <div>
+    AppFooter
   </div>
 </template>
 <script>
 export default {
-  name: 'PostScreen'
+  name: "AppFooter"
 }
 </script>

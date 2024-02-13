@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  namespace :api do
+    namespace :v1 do
+      get 'posts/index'
+      resources :posts, only: [:index, :create]
+    end
+  end
+
   root 'dashboard#index'
 
   get 'registration', to: 'users#new', as: 'registration'
