@@ -34,6 +34,11 @@ gem 'webpacker', '~> 5.0'
 # Enable Slim
 gem 'slim-rails'
 
+# Load env variable
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'httparty'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

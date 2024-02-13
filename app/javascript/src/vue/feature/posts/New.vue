@@ -11,10 +11,12 @@
 <script>
 import PostForm from "./Form.vue"
 import axios from 'axios';
+import redirectRoot from "../../mixins/redirectRoot";
 
 export default {
   name: "NewPost",
   components: { PostForm },
+  mixins: [redirectRoot],
   data() {
     return {
       post: {
@@ -26,9 +28,6 @@ export default {
   methods: {
     handleChange({ key, value }) {
       this.post[key] = value;
-    },
-    redirectRoot() {
-      window.location.href = '/';
     },
     async submit() {
       try {

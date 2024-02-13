@@ -1,0 +1,62 @@
+// cursor
+.cur{
+  &-p{
+    cursor: pointer;
+  }
+}
+
+.fz{
+  &-10{
+    font-size: 10px;
+  }
+  &-12{
+    font-size: 12px;
+  }
+  &-24{
+    font-size: 24px;
+  }
+}
+
+.overflow{
+  &-x{
+    &-hidden{
+      overflow-x: hidden;
+    }
+  }
+}
+
+.p{
+  &r{
+    &-2{
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.mh-100vh{
+  min-height: 100vh;
+}
+
+.popper{
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 999;
+    opacity: 0;
+    padding: .75rem;
+
+    &.show{
+      opacity: 1;
+    }
+
+    &-item:hover{
+      opacity: 0.8;
+      background-color: red;
+    }
+  }
+
+}
+

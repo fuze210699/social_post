@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-x-hidden mh-100vh position-relative">
     <AppHeader />
     <Dashboard />
     <AppFooter />
